@@ -1,0 +1,11 @@
+<div>
+    <h2>working-skills:</h2>
+    <div id="container">
+        <div *ngFor="let skill of skills">
+            <img src="{{skill.pic}}" alt="{{skill.libelle}}" title="Skill n°{{ skill.id }} => {{ skill.libelle | uppercase }}">
+        </div>
+    </div>
+    <p>Some posters come from Barney Stinson's office room<br />
+        <i>(A leading character of TV serie How I Met Your Mother)</i>
+    </p>
+</div>
