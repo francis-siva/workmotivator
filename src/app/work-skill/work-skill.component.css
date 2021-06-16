@@ -33,6 +33,4 @@ h2 {
 #container + p {
     width: 25em;
     margin: auto;
-    /* TODO: Display this element after few seconds of view's load (see CSS property binding)*/
-    /* opacity: 0.0; */
 }
