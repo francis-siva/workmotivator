@@ -1,10 +1,50 @@
+nav {
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+ul { padding: 0 2.5em;}
+
 li {
     list-style: none;
     display: inline-block;
-    margin-left: 1em;
+    font-size: 1.5em;
 }
+
+li:not(li:first-of-type) { margin-left: 1em;}
 
 li a {
     text-decoration: none;
     color: #0074e8;
+    text-align: start;
+}
+
+li a:hover {
+    text-decoration: underline;
+    background-color: #004a8b;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+@media all and (max-width: 53.313em) {
+    li { display: block;}
+
+    li:not(li:first-of-type) { margin-left: 0;}
+
+    li a {
+        display: block;
+        width: 10em;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 37.625em) {
+    li:hover { margin-bottom: 1em;}
+}
+
+@media all and (max-width: 18.75em) {
+    li a { width: 100%;}
+
+    li a:hover { padding: 0.3em 4%;}
 }
